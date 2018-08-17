@@ -1,0 +1,15 @@
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel.csprojAssemblyReference.cache
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\MainWindow.g.cs
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\App.g.cs
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel_MarkupCompile.cache
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel_MarkupCompile.lref
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\bin\Debug\archivoexcel.exe.config
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\bin\Debug\archivoexcel.exe
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\bin\Debug\archivoexcel.pdb
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\MainWindow.baml
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel.g.resources
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel.Properties.Resources.resources
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel.csproj.GenerateResource.cache
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel.csproj.CoreCompileInputs.cache
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel.exe
+C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel.pdb
