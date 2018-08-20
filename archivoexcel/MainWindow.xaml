@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Content="crear_excel" HorizontalAlignment="Left" Margin="191,144,0,0" VerticalAlignment="Top" Width="75" Name="crearExcel" Click="CrearExcel"/>
+        <Button Content="crearClosedXml" HorizontalAlignment="Left" Margin="405,129,0,0" VerticalAlignment="Top" Width="75" Click="CrearClosedXml"/>
 
     </Grid>
 </Window>

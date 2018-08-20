@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using Microsoft.Office.Interop.Excel;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace archivoexcel
 {
@@ -24,8 +24,8 @@ namespace archivoexcel
             }
             xlApp.Visible = true;
 
-            Workbook wb = xlApp.Workbooks.Add(XlWBATemplate.xlWBATWorksheet);
-            Worksheet ws = (Worksheet)wb.Worksheets[1];
+            Excel.Workbook wb = xlApp.Workbooks.Add(Excel.XlWBATemplate.xlWBATWorksheet);
+            Excel.Worksheet ws = (Excel.Worksheet)wb.Worksheets[1];
 
             if (ws == null)
             {
@@ -49,7 +49,7 @@ namespace archivoexcel
             aRange.Value2 = 8;*/
 
             //selecinamos celdas de la hoja
-            Range rangoCeldas = ws.get_Range("a1");
+            Excel.Range rangoCeldas = ws.get_Range("a1");
             
             
             if(rangoCeldas == null)
@@ -113,6 +113,7 @@ namespace archivoexcel
                 rangoCeldas.GetType().InvokeMember("value", BindingFlags.SetProperty, null, rangoCeldas, enc);
             }
 
+            
             /*Object[] encabezados = new object[7];
             encabezados[0] = "identificacion";
             encabezados[1] = "Nombre";
@@ -124,27 +125,27 @@ namespace archivoexcel
             per[0] = "A";
             rangoCeldas.GetType().InvokeMember("Value", BindingFlags.SetProperty, null, rangoCeldas, per);*/
 
-           /* foreach(persona a in datos)
+            foreach(persona a in datos)
             {
                 index++;
 
                 try
                 {
-                    Worksheet.get_Range("A,5").Value2 = a.Nombre + " " + a.Apellido;
-                    Worksheet.get_Range("B" + index).Value2 = persona.ventasPrimer;
-                    Worksheet.get_Range("C" + index).Value2 = persona.ventasSegundo;
-                    Worksheet.get_Range("D" + index).Value2 = persona.ventasTercer;
-                    Worksheet.get_Range("E" + cont).Value2 = persona.ventasCuarto;
+                    ws.get_Range("A" + index).Value2 = a.Nombre + " " + a.Apellido;
+                    ws.get_Range("B" + index).Value2 = a.Cc;
+                    ws.get_Range("C" + index).Value2 = a.Cumpleaños;
+                    ws.get_Range("D" + index).Value2 = a.Direccion;
+                    ws.get_Range("E" + index).Value2 = a.Telefono;
                     
 
                     //Agregamos la Suma de los Trimestres usando la formula que obtuvimos en el
                     //documento de Excel al crear la Macro.
-                    worksheet.get_Range("F" + cont).FormulaR1C1 = String.Format("=SUM(RC[-{0}]:RC[-1])", 4);
+                    ws.get_Range("F" + index).FormulaR1C1 = String.Format("=SUM(RC[-{0}]:RC[-1])", 4);
 
                     //Agregamos el promedio usando otra vez una formula de una Macro en Excel
-                    worksheet.get_Range("G" + cont).FormulaR1C1 = String.Format("=RC[-1]/{0}", 4);
+                    ws.get_Range("G" + index).FormulaR1C1 = String.Format("=RC[-1]/{0}", 4);
 
-                    cont++;
+                    index++;
                 }
                 catch (System.Runtime.InteropServices.COMException e)
                 {
@@ -152,24 +153,25 @@ namespace archivoexcel
                 }
 
             }
-            worksheet.get_Range("A" + cont).Value2 = "Ventas Totales";
-            worksheet.get_Range("A" + (cont + 1)).Value2 = "Promedio";
+            ws.get_Range("A" + index).Value2 = "Ventas Totales";
+            ws.get_Range("A" + (index + 1)).Value2 = "Promedio";
 
-            foreach (char col in columns)
-            {
-                //Agregamos las Ventas Totales - Generalizando la formula VBA
-                worksheet.get_Range(col + "" + cont).FormulaR1C1 = String.Format("=SUM(R[-{0}]C:R[-1]C)", lista.Count);
+            /* foreach (char col in columns)
+             {
+                 //Agregamos las Ventas Totales - Generalizando la formula VBA
+                 worksheet.get_Range(col + "" + cont).FormulaR1C1 = String.Format("=SUM(R[-{0}]C:R[-1]C)", lista.Count);
 
-                //Agregamos el Promedio
-                worksheet.get_Range(col + "" + (cont + 1)).FormulaR1C1 = String.Format("=R[-1]C/{0}", lista.Count);
-            }
+                 //Agregamos el Promedio
+                 worksheet.get_Range(col + "" + (cont + 1)).FormulaR1C1 = String.Format("=R[-1]C/{0}", lista.Count);
+             }*/
 
             //Agregamos el Grafico
-            worksheet.Shapes.AddChart(Excel.XlChartType.xlColumnClustered)
-                .Chart.SetSourceData(worksheet.get_Range("A" + temp + ":" + "G" + (temp + lista.Count)));
+            index++;
+            ws.Shapes.AddChart(Excel.XlChartType.xlColumnClustered)
+                .Chart.SetSourceData(ws.get_Range("A" + index + ":" + "G" + (index + 4)));
 
-            worksheet.get_Range("A1").Select();
-        }*/
+            ws.get_Range("A1").Select();
+        
 
         }
     }

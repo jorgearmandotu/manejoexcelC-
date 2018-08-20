@@ -42,5 +42,11 @@ namespace archivoexcel
             
 
         }
+
+        private void CrearClosedXml(object sender, RoutedEventArgs e)
+        {
+            List<persona> personas = DatosDummy();
+            ManejoClosedXml excel = new ManejoClosedXml(personas);
+        }
     }
 }

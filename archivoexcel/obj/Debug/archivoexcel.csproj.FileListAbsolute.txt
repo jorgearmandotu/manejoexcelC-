@@ -13,3 +13,28 @@ C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel.cspro
 C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel.csproj.CoreCompileInputs.cache
 C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel.exe
 C:\Users\ASD\source\repos\archivoexcel\archivoexcel\obj\Debug\archivoexcel.pdb
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\archivoexcel.csprojAssemblyReference.cache
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\MainWindow.g.cs
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\App.g.cs
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\archivoexcel_MarkupCompile.cache
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\archivoexcel_MarkupCompile.lref
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\archivoexcel.exe
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\archivoexcel.pdb
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\archivoexcel.exe.config
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\archivoexcel.exe
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\archivoexcel.pdb
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\ClosedXML.dll
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\DocumentFormat.OpenXml.dll
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\ExcelNumberFormat.dll
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\FastMember.Signed.dll
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\System.IO.FileSystem.Primitives.dll
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\System.IO.Packaging.dll
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\ClosedXML.xml
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\DocumentFormat.OpenXml.xml
+D:\C# Proyects\manejoexcelC-\archivoexcel\bin\Debug\ExcelNumberFormat.xml
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\MainWindow.baml
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\archivoexcel.g.resources
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\archivoexcel.Properties.Resources.resources
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\archivoexcel.csproj.GenerateResource.cache
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\archivoexcel.csproj.CoreCompileInputs.cache
+D:\C# Proyects\manejoexcelC-\archivoexcel\obj\Debug\archivoexcel.csproj.CopyComplete
